@@ -1,31 +1,55 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An accessible HTML prework exercise showing favorite films and travel destinations.">
+  <title>My Favorite Things | HTML Prework</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>My Favorite Things</h1>
-    <img src="Pro_Pic.jpeg" style="width:100px; height:100 px;">
- <h2>MY Favorite Movies</h2>
- <ol>
-     <li>The Great Gatsby</li>
-     <li>Interstellar</li>
-     <li>LOTR 1</li>
-     <li>LOTR 2</li>
-     <li>LOTR 3</li>
- </ol>
- <h2>MY Favorite Places to Visit</h2>
- <ul>
-     <li>Seattle, WA</li>
-     <li>Portland, OR</li>
-     <li>Lake Tahoe, CA</li>
-     <li>San Diego, CA</li>
-     <li>Miami, FL</li>
- </ul>
- <a href="https://www.linkedin.com/in/engineerinthecloud/">LinkedIn</a>
+  <a class="skip-link" href="#content">Skip To Content</a>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Vets In Tech Prework</p>
+      <h1>My Favorite Things</h1>
+    </div>
+  </header>
+
+  <main class="container" id="content">
+    <figure class="profile">
+      <img src="img/portrait.svg" width="100" height="100"
+           alt="Illustrated profile silhouette" decoding="async">
+      <figcaption>A simple HTML learning exercise</figcaption>
+    </figure>
+
+    <section aria-labelledby="movies-title" class="panel">
+      <h2 id="movies-title">My Top Movies</h2>
+      <ol>
+        <li>The Great Gatsby</li>
+        <li>Interstellar</li>
+        <li>The Lord of the Rings: The Fellowship of the Ring</li>
+        <li>The Lord of the Rings: The Two Towers</li>
+        <li>The Lord of the Rings: The Return of the King</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="places-title" class="panel">
+      <h2 id="places-title">My Favorite Places To Visit</h2>
+      <ul>
+        <li>Seattle, WA</li>
+        <li>Portland, OR</li>
+        <li>Lake Tahoe, CA</li>
+        <li>San Diego, CA</li>
+        <li>Miami, FL</li>
+      </ul>
+    </section>
+
+    <p class="profile-link"><a href="https://www.linkedin.com/in/engineerinthecloud/"
+       rel="noopener noreferrer">LinkedIn Profile</a></p>
+  </main>
+  <footer class="site-footer">
+    <div class="container"><p>Historical prework exercise. Not a production application.</p></div>
+  </footer>
 </body>
 </html>

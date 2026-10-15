@@ -1,0 +1,21 @@
+:root { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #19384b; background: #f3f7f8; line-height: 1.6; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #005a82; }
+a:focus-visible { outline: 3px solid #985300; outline-offset: 4px; }
+.container { width: min(760px, calc(100% - 2.5rem)); margin-inline: auto; }
+.site-header { background: #10364b; color: #fff; padding: 2.5rem 0; }
+.site-header h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 0; }
+.eyebrow { font-size: .8rem; letter-spacing: .09em; text-transform: uppercase; color: #d3edf1; }
+.skip-link { position: absolute; top: -8rem; left: 1rem; z-index: 1; background: #fff; padding: .6rem 1rem; }
+.skip-link:focus { top: .5rem; }
+.profile { margin: 2rem 0; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+.profile img { border-radius: 50%; }
+.profile figcaption { color: #37576a; }
+.panel { border: 1px solid #cfdee5; background: #fff; border-radius: .8rem; padding: 1.1rem 1.5rem; margin-bottom: 1.25rem; }
+.panel h2 { margin-top: 0; }
+.panel li + li { margin-top: .4rem; }
+.profile-link { font-weight: 700; margin-bottom: 2rem; }
+.site-footer { background: #10364b; color: #fff; padding: 1rem 0; font-size: .9rem; }
+.site-footer p { margin: 0; }
+@media (max-width: 420px) { .panel { padding-inline: 1rem; } }
